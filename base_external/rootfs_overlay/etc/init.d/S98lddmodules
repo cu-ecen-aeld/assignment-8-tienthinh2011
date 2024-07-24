@@ -1,0 +1,13 @@
+#! /bin/sh
+case "$1" in
+    start)
+        echo "S98Modules start"
+        ;;
+    stop)
+        echo "S98Modules stop"
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+    exit 1
+esac
+exit 0
