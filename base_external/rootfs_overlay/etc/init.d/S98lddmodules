@@ -2,9 +2,18 @@
 case "$1" in
     start)
         echo "S98Modules start"
+        echo "Load scull"
+        /bin/scull_load
+        echo "Load faulty"
+        /bin/module_load faulty
+        echo "modprobe hello"
+        modprobe hello
         ;;
     stop)
-        echo "S98Modules stop"
+        echo "S98Modules stop unload scull, faulty"
+        /bin/scull_unload
+        /bin/module_unload faulty
+        rmmod hello  
         ;;
     *)
         echo "Usage: $0 {start|stop}"
