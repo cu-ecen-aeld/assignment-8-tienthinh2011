@@ -6,6 +6,8 @@ case "$1" in
         /bin/scull_load
         echo "Load faulty"
         /bin/module_load faulty
+        echo "Load aesdchar"
+        /bin/module_load aesdchar
         echo "modprobe hello"
         modprobe hello
         ;;
@@ -13,6 +15,7 @@ case "$1" in
         echo "S98Modules stop unload scull, faulty"
         /bin/scull_unload
         /bin/module_unload faulty
+        /bin/module_unload aesdchar
         rmmod hello  
         ;;
     *)
