@@ -6,18 +6,19 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 'assignment-8' #assignment-5-buildroot
+# AESD_ASSIGNMENTS_VERSION = 'assignment-5-buildroot'
+AESD_ASSIGNMENTS_VERSION = 'assignment-8' 
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 # using this one for github source
-# AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-tienthinh2011.git
-# AESD_ASSIGNMENTS_SITE_METHOD = git
-# AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
+AESD_ASSIGNMENTS_SITE = git@github.com:cu-ecen-aeld/assignments-3-and-later-tienthinh2011.git
+AESD_ASSIGNMENTS_SITE_METHOD = git
+AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 
 #using below for local source (faster when testing locally)
-AESD_ASSIGNMENTS_SITE = /home/ubuntu/linux/assignments-3-and-later-tienthinh2011
-AESD_ASSIGNMENTS_SITE_METHOD = local
+# AESD_ASSIGNMENTS_SITE = /home/ubuntu/linux/assignments-3-and-later-tienthinh2011
+# AESD_ASSIGNMENTS_SITE_METHOD = local
 # AESD_ASSIGNMENTS_GIT_SUBMODULES = NO
 
 AESD_ASSIGNMENTS_MODULE_SUBDIRS += aesd-char-driver
